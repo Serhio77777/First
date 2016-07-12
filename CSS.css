@@ -1,0 +1,40 @@
+body{
+    background-image:url(10.jpg);
+}
+
+.errorName1{
+     visibility: hidden;
+     position: absolute;
+ }
+.errorName1 p {
+    font-size: 15px;
+    color: red;
+}
+.flex-container {
+	display : flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block{
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	height:700px;
+	width:600px;
+	background-color:blue;
+	font-size: 22px; 
+	color: White;
+}
+
+.blockAge{
+display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.blockLog{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}

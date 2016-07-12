@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+<div class="flex-container">
+  <div class="block">
+   <form action="" onsubmit="return validate();">
+	<p>Login</p>
+       <div class="errorName1" id="errorName" ><p>Only lowercase letters and uppercase in the Latin alphabet,numbers, and \"_\" character!!!</p></div>
+       <div class="errorName1" id="errorNameSymbol" ><p>Login: To short. Please enter more than 5 symbol!!!</p></div>
+
+       <input type="text" id="userName"/><br>
+
+	<p>Your Phone</p>
+       <div class="errorName1" id="errorPhone" ><p>Only number your mobile phone!</p></div>
+       <input type="text" id="userPhone"/><br>
+
+
+       <p>Password</p>
+       <div class="errorName1" id="errorPassword" ><p>Only lowercase letters and uppercase in the Latin alphabet,numbers, and \"_\" character!!!</p></div>
+       <div class="errorName1" id="errorPasswordSymbol" ><p>Password: To short. Please enter more than 5 symbol!!!</p></div>
+
+       <input type="password" id="userPassword"/>
+	   <p>Once more, please</p>
+       <div class="errorName1" id="errorPasswordChange" ><p>Password to rewrite:  Be more attentive. Enter once more!!!</p></div>
+
+       <input type="password" id="userPassword1"/><br>
+
+       <div class="blockAge"><div class="Sex">
+        <p>Sex</p>
+		<input type="radio" name="sex" checked="checked" value="male" />M
+
+		<input type="radio" name="sex" value="female" />F<br>
+	</div>
+       <div class="Age">
+	<p>Age</p>
+		<p><select size="2" multiple name="age[]">
+
+	    	<option value="9">9</option>
+	    		<option value="10">10</option>
+
+	    	<option value="11">11</option>
+	    		<option value="12">12</option>
+
+	    	<option value="13">13</option>
+
+	    	<option value="14">14</option>
+	    		<option value="15">15</option>
+
+	    	<option value="16">16</option>
+	    		<option selected value="17">17</option>
+
+	    	<option value="18">18</option>
+
+	    	<option value="19">19</option>
+	    		<option value="20">20</option>
+
+	    	<option value="21">21</option>
+			<option value="22">22</option>
+
+	    	<option value="23">23</option>
+
+	    	<option value="24">24</option>
+	    		<option value="25">25</option>
+
+	    	<option value="26">26</option>
+	    		<option value="27">27</option>
+
+		<option value="28">28</option>
+
+		<option value="29">29</option>
+	    		<option value="30">30</option>
+
+	</select></p>
+        </div></div>
+
+	   <p>Comments<Br>
+		   <textarea name="comment" cols="40" rows="3"></textarea></p>
+
+
+      	<button type="submit">Join Us</button><br>
+       </form>
+  </div>
+</div>
+  <script src="script2.js"></script>
+</body>
+</html>
+
