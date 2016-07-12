@@ -33,18 +33,15 @@ function validate(){
         setTimeout('userName.style.border = "1px solid black"',7700);
         w8=false;
 	}	
-
-if((userN<5)){
+    if((userN<5)){
 		userName.style.border = "2px solid red";
-    errorNameSymbol.style.top = "117px";
-    errorNameSymbol.style.left = "400px";
-    setTimeout('errorNameSymbol.style.visibility = "visible"', 1000);
-    setTimeout('errorNameSymbol.style.visibility = "hidden"', 7000);
-    setTimeout('userName.style.border = "1px solid black"',7700);
-    w8=false;
+        errorNameSymbol.style.top = "117px";
+        errorNameSymbol.style.left = "400px";
+        setTimeout('errorNameSymbol.style.visibility = "visible"', 1000);
+        setTimeout('errorNameSymbol.style.visibility = "hidden"', 7000);
+        setTimeout('userName.style.border = "1px solid black"',7700);
+        w8=false;
 	}
-
-
     if((!userPhone.value)||(userPhone.value.search(reg2) != -1)||(userPhone.value.length != 10)){
         userPhone.style.border = "2px solid red";
         errorPhone.style.top = "208px";
@@ -52,44 +49,38 @@ if((userN<5)){
         setTimeout('errorPhone.style.visibility = "visible"', 1000);
         setTimeout('errorPhone.style.visibility = "hidden"', 7000);
         setTimeout('userPhone.style.border = "1px solid black"',7700);
-
         w8=false;
-
     }
-
-
-if((!userPassword.value)||(userPassword.value.search(reg1) != -1)){
+    if((!userPassword.value)||(userPassword.value.search(reg1) != -1)){
 		userPassword.style.border = "2px solid red";
-    errorPassword.style.top = "296px";
-    errorPassword.style.left = "400px";
-    setTimeout('errorPassword.style.visibility = "visible"', 1000);
-    setTimeout('errorPassword.style.visibility = "hidden"', 7000);
-    setTimeout('userPassword.style.border = "1px solid black"',7700);
-    w8=false;
-	
-	}
-if((userPass<5)){
+        errorPassword.style.top = "296px";
+        errorPassword.style.left = "400px";
+        setTimeout('errorPassword.style.visibility = "visible"', 1000);
+        setTimeout('errorPassword.style.visibility = "hidden"', 7000);
+        setTimeout('userPassword.style.border = "1px solid black"',7700);
+        w8=false;
+		}
+    if((userPass<5)){
 		userPassword.style.border = "2px solid red";
-    errorPasswordSymbol.style.top = "308px";
-    errorPasswordSymbol.style.left = "400px";
-    setTimeout('errorPasswordSymbol.style.visibility = "visible"', 1000);
-    setTimeout('errorPasswordSymbol.style.visibility = "hidden"', 7000);
-    setTimeout('userPassword.style.border = "1px solid black"',7700);
-    w8=false;
+        errorPasswordSymbol.style.top = "308px";
+        errorPasswordSymbol.style.left = "400px";
+        setTimeout('errorPasswordSymbol.style.visibility = "visible"', 1000);
+        setTimeout('errorPasswordSymbol.style.visibility = "hidden"', 7000);
+        setTimeout('userPassword.style.border = "1px solid black"',7700);
+        w8=false;
 	}
-if((userPassCorrect1!==userPassCorrect)){
-	userPassword1.style.border = "2px solid red";
-    errorPasswordChange.style.top = "400px";
-    errorPasswordChange.style.left = "400px";
-    setTimeout('errorPasswordChange.style.visibility = "visible"', 1000);
-    setTimeout('errorPasswordChange.style.visibility = "hidden"', 7000);
-    setTimeout('userPassword1.style.border = "1px solid black"',7700);
-    w8=false;
-}
-
+    if((userPassCorrect1!==userPassCorrect)){
+	    userPassword1.style.border = "2px solid red";
+        errorPasswordChange.style.top = "400px";
+        errorPasswordChange.style.left = "400px";
+        setTimeout('errorPasswordChange.style.visibility = "visible"', 1000);
+        setTimeout('errorPasswordChange.style.visibility = "hidden"', 7000);
+        setTimeout('userPassword1.style.border = "1px solid black"',7700);
+        w8=false;
+    }
     if (w8 === false){
         return false;
     }
-	alert("Success! Takes my congratulations!");
+    alert("Success! Takes my congratulations!");
 	return true;
 }
